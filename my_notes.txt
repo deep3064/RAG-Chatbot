@@ -1,0 +1,120 @@
+# --- SHOPSMART APP CONFIGURATION ---
+App_Name: ShopSmart
+Version: 1.4.2
+Environment: production
+Feature_Recommendations: Enabled (true)
+Feature_Reviews: Enabled (true)
+Feature_Discounts: Disabled (false)
+
+# --- USER DATABASE ---
+[USER: u1001]
+Name: Alice Johnson
+Email: alice@example.com
+Roles: customer
+Language: en
+Currency: USD
+
+[USER: u1002]
+Name: Bob Smith
+Email: bob@example.com
+Roles: customer, seller
+Language: fr
+Currency: EUR
+
+# --- PRODUCT INVENTORY ---
+[PRODUCT: p2001]
+Name: Wireless Headphones
+Price: 89.99
+Stock_Level: 120 units
+Warehouse_Location: WH-A1
+
+[PRODUCT: p2002]
+Name: Mechanical Keyboard
+Price: 129.5
+Stock_Level: 60 units
+Warehouse_Location: WH-B2
+
+# --- ORDER HISTORY ---
+[ORDER: o3001]
+User_Reference: u1001 (Alice Johnson)
+Items: 1x Wireless Headphones (p2001), 2x Mechanical Keyboard (p2002)
+Order_Total: 348.99
+Shipping_Status: shipped
+
+# --- SYSTEM EVENT LOGS ---
+EVENT_LOG: 2025-01-10T10:15:30Z | Level: INFO | Service: auth | Message: User u1001 logged in
+EVENT_LOG: 2025-01-10T10:17:02Z | Level: ERROR | Service: payment | Message: Payment failed for order o3001
+
+# --- SYSTEM METRICS ---
+Active_Users: 245
+Daily_Orders: 87
+Conversion_Rate: 0.034
+
+# --- SECURITY & COMPLIANCE ---
+Encryption: AES-256
+Compliance_Standards: GDPR, PCI-DSS
+Audit_Status: Passed (Last Audit: 2024-12-15)
+
+# --- SMART CITY INFRASTRUCTURE ---
+[NODE_ID: SC-TX-001]
+Department: Transportation
+Asset: Automated Traffic Light (Intersection A1)
+Status: Operational
+Maintenance_Log:
+- Last Service: 2024-12-10
+- Technician: Marco Rossi
+- Hardware_Version: V4.2
+- Connectivity: 5G-IoT (Signal Strength: 92%)
+Location: North District, Sector 4
+Emergency_Override_Code: 9921-ALPHA
+
+[NODE_ID: SC-TX-002]
+Department: Transportation
+Asset: Automated Traffic Light (Intersection B7)
+Status: Warning (Low Power)
+Maintenance_Log:
+- Last Service: 2024-11-05
+- Technician: Sarah Chen
+- Hardware_Version: V3.9
+- Connectivity: 4G-LTE (Signal Strength: 45%)
+Location: South District, Sector 12
+Emergency_Override_Code: 1144-BETA
+
+[NODE_ID: SC-EN-105]
+Department: Energy
+Asset: Solar Array Panel (Substation Gamma)
+Status: Operational
+Performance:
+- Current Output: 450 kWh
+- Storage Battery Level: 88%
+- Temperature: 34°C
+Maintenance_Log:
+- Last Service: 2025-01-15
+- Service Note: Cleaning performed on surface.
+Location: East Industrial Zone, Plot 9
+Monitoring_ID: ENG-449-G
+
+[NODE_ID: SC-WS-302]
+Department: Waste Management
+Asset: Smart Bin (ID: BIN-77)
+Status: Full (95%)
+Sensor_Data:
+- Material: Organic
+- Fill_Rate: High
+- Internal_Temp: 18°C
+Location: Central Park, Entrance 2
+Pickup_Priority: Level 1 (Immediate)
+
+[NODE_ID: SC-SEC-501]
+Department: Public Security
+Asset: Surveillance Camera (Main St. Bridge)
+Status: Operational
+Features:
+- Night Vision: Active
+- Facial Recognition: Disabled (Privacy Mode)
+- Local Storage: 12 TB (Used: 40%)
+Maintenance_Log:
+- Last Service: 2024-05-20
+- Hardware_Version: V5.0
+Location: Downtown, Bridge North
+Access_Level: Level 4 (Restricted)

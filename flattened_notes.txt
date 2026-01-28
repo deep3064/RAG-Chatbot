@@ -1,0 +1,89 @@
+System | App_Name: ShopSmart
+System | Version: 1.4.2
+System | Environment: production
+System | Feature_Recommendations: Enabled
+System | Feature_Reviews: Enabled
+System | Feature_Discounts: Disabled
+USER: u1001 (Alice Johnson) | Name: Alice Johnson
+USER: u1001 (Alice Johnson) | Email: alice@example.com
+USER: u1001 (Alice Johnson) | Roles: customer
+USER: u1001 (Alice Johnson) | Language: en
+USER: u1001 (Alice Johnson) | Currency: USD
+USER: u1002 (Bob Smith) | Name: Bob Smith
+USER: u1002 (Bob Smith) | Email: bob@example.com
+USER: u1002 (Bob Smith) | Roles: customer, seller
+USER: u1002 (Bob Smith) | Language: fr
+USER: u1002 (Bob Smith) | Currency: EUR
+PRODUCT: p2001 (Wireless Headphones) | Name: Wireless Headphones
+PRODUCT: p2001 (Wireless Headphones) | Price: 89.99
+PRODUCT: p2001 (Wireless Headphones) | Stock_Level: 120 units
+PRODUCT: p2001 (Wireless Headphones) | Warehouse_Location: WH-A1
+PRODUCT: p2002 (Mechanical Keyboard) | Name: Mechanical Keyboard
+PRODUCT: p2002 (Mechanical Keyboard) | Price: 129.5
+PRODUCT: p2002 (Mechanical Keyboard) | Stock_Level: 60 units
+PRODUCT: p2002 (Mechanical Keyboard) | Warehouse_Location: WH-B2
+ORDER: o3001 | User_Reference: u1001 (Alice Johnson)
+ORDER: o3001 | Items: 1x Wireless Headphones (p2001), 2x Mechanical Keyboard (p2002)
+ORDER: o3001 | Order_Total: 348.99
+ORDER: o3001 | Shipping_Status: shipped
+ORDER: o3001 | EVENT_LOG: 2025-01-10T10:15:30Z | Level: INFO | Service: auth | Message: User u1001 logged in
+ORDER: o3001 | EVENT_LOG: 2025-01-10T10:17:02Z | Level: ERROR | Service: payment | Message: Payment failed for order o3001
+ORDER: o3001 | Active_Users: 245
+ORDER: o3001 | Daily_Orders: 87
+ORDER: o3001 | Conversion_Rate: 0.034
+ORDER: o3001 | Encryption: AES-256
+ORDER: o3001 | Compliance_Standards: GDPR, PCI-DSS
+ORDER: o3001 | Audit_Status: Passed (Last Audit: 2024-12-15)
+NODE_ID: SC-TX-001 (Marco Rossi) | Department: Transportation
+NODE_ID: SC-TX-001 (Marco Rossi) | Asset: Automated Traffic Light (Intersection A1)
+NODE_ID: SC-TX-001 (Marco Rossi) | Status: Operational
+NODE_ID: SC-TX-001 (Marco Rossi) | Maintenance_Log:
+NODE_ID: SC-TX-001 (Marco Rossi) | - Last Service: 2024-12-10
+NODE_ID: SC-TX-001 (Marco Rossi) | - Technician: Marco Rossi
+NODE_ID: SC-TX-001 (Marco Rossi) | - Hardware_Version: V4.2
+NODE_ID: SC-TX-001 (Marco Rossi) | - Connectivity: 5G-IoT (Signal Strength: 92%)
+NODE_ID: SC-TX-001 (Marco Rossi) | Location: North District, Sector 4
+NODE_ID: SC-TX-001 (Marco Rossi) | Emergency_Override_Code: 9921-ALPHA
+NODE_ID: SC-TX-002 (Sarah Chen) | Department: Transportation
+NODE_ID: SC-TX-002 (Sarah Chen) | Asset: Automated Traffic Light (Intersection B7)
+NODE_ID: SC-TX-002 (Sarah Chen) | Status: Warning (Low Power)
+NODE_ID: SC-TX-002 (Sarah Chen) | Maintenance_Log:
+NODE_ID: SC-TX-002 (Sarah Chen) | - Last Service: 2024-11-05
+NODE_ID: SC-TX-002 (Sarah Chen) | - Technician: Sarah Chen
+NODE_ID: SC-TX-002 (Sarah Chen) | - Hardware_Version: V3.9
+NODE_ID: SC-TX-002 (Sarah Chen) | - Connectivity: 4G-LTE (Signal Strength: 45%)
+NODE_ID: SC-TX-002 (Sarah Chen) | Location: South District, Sector 12
+NODE_ID: SC-TX-002 (Sarah Chen) | Emergency_Override_Code: 1144-BETA
+NODE_ID: SC-EN-105 | Department: Energy
+NODE_ID: SC-EN-105 | Asset: Solar Array Panel (Substation Gamma)
+NODE_ID: SC-EN-105 | Status: Operational
+NODE_ID: SC-EN-105 | Performance:
+NODE_ID: SC-EN-105 | - Current Output: 450 kWh
+NODE_ID: SC-EN-105 | - Storage Battery Level: 88%
+NODE_ID: SC-EN-105 | - Temperature: 34°C
+NODE_ID: SC-EN-105 | Maintenance_Log:
+NODE_ID: SC-EN-105 | - Last Service: 2025-01-15
+NODE_ID: SC-EN-105 | - Service Note: Cleaning performed on surface.
+NODE_ID: SC-EN-105 | Location: East Industrial Zone, Plot 9
+NODE_ID: SC-EN-105 | Monitoring_ID: ENG-449-G
+NODE_ID: SC-WS-302 | Department: Waste Management
+NODE_ID: SC-WS-302 | Asset: Smart Bin (ID: BIN-77)
+NODE_ID: SC-WS-302 | Status: Full (95%)
+NODE_ID: SC-WS-302 | Sensor_Data:
+NODE_ID: SC-WS-302 | - Material: Organic
+NODE_ID: SC-WS-302 | - Fill_Rate: High
+NODE_ID: SC-WS-302 | - Internal_Temp: 18°C
+NODE_ID: SC-WS-302 | Location: Central Park, Entrance 2
+NODE_ID: SC-WS-302 | Pickup_Priority: Level 1 (Immediate)
+NODE_ID: SC-SEC-501 | Department: Public Security
+NODE_ID: SC-SEC-501 | Asset: Surveillance Camera (Main St. Bridge)
+NODE_ID: SC-SEC-501 | Status: Operational
+NODE_ID: SC-SEC-501 | Features:
+NODE_ID: SC-SEC-501 | - Night Vision: Active
+NODE_ID: SC-SEC-501 | - Facial Recognition: Disabled (Privacy Mode)
+NODE_ID: SC-SEC-501 | - Local Storage: 12 TB (Used: 40%)
+NODE_ID: SC-SEC-501 | Maintenance_Log:
+NODE_ID: SC-SEC-501 | - Last Service: 2024-05-20
+NODE_ID: SC-SEC-501 | - Hardware_Version: V5.0
+NODE_ID: SC-SEC-501 | Location: Downtown, Bridge North
+NODE_ID: SC-SEC-501 | Access_Level: Level 4 (Restricted)
