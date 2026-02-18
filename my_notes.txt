@@ -118,3 +118,166 @@ Maintenance_Log:
 - Hardware_Version: V5.0
 Location: Downtown, Bridge North
 Access_Level: Level 4 (Restricted)
+
+
+
+
+# --- SHOPSMART APP CONFIGURATION ---
+App_Name: ShopSmart
+Version: 1.5.0
+Environment: production
+Feature_Recommendations: Enabled (true)
+Feature_Reviews: Enabled (true)
+Feature_Discounts: Enabled (true)
+
+# --- USER DATABASE ---
+[USER: u1001]
+Name: Alice Johnson
+Email: alice@example.com
+Roles: customer
+Language: en
+Currency: USD
+
+[USER: u1002]
+Name: Bob Smith
+Email: bob@example.com
+Roles: customer, seller
+Language: fr
+Currency: EUR
+
+[USER: u1003]
+Name: Emma Wilson
+Email: emma.wilson@example.com
+Roles: customer
+Language: en
+Currency: USD
+Loyalty_Points: 450
+
+[USER: u1004]
+Name: Carlos Martinez
+Email: carlos.m@example.com
+Roles: customer
+Language: es
+Currency: EUR
+Loyalty_Points: 220
+
+[USER: u1005]
+Name: Sophie Dubois
+Email: sophie.dubois@example.com
+Roles: customer, seller
+Language: fr
+Currency: EUR
+Loyalty_Points: 890
+
+# --- PRODUCT INVENTORY ---
+[PRODUCT: p2001]
+Name: Wireless Headphones
+Price: 89.99
+Stock_Level: 120 units
+Warehouse_Location: WH-A1
+
+[PRODUCT: p2002]
+Name: Mechanical Keyboard
+Price: 129.5
+Stock_Level: 60 units
+Warehouse_Location: WH-B2
+
+[PRODUCT: p2003]
+Name: Smart Fitness Watch
+Category: Wearables
+Price: 199.99
+Stock_Level: 75 units
+Warehouse_Location: WH-C3
+Discount: 10%
+Rating: 4.5
+
+[PRODUCT: p2004]
+Name: Gaming Mouse
+Category: Accessories
+Price: 59.99
+Stock_Level: 150 units
+Warehouse_Location: WH-A2
+Discount: 0%
+Rating: 4.3
+
+[PRODUCT: p2005]
+Name: 4K Monitor 27-inch
+Category: Monitors
+Price: 349.99
+Stock_Level: 40 units
+Warehouse_Location: WH-D1
+Discount: 15%
+Rating: 4.7
+
+# --- PRODUCT REVIEWS ---
+[REVIEW: r4001]
+Product_Reference: p2003 (Smart Fitness Watch)
+User_Reference: u1003 (Emma Wilson)
+Rating: 5
+Comment: Excellent battery life and very accurate tracking.
+Review_Date: 2026-01-10
+
+[REVIEW: r4002]
+Product_Reference: p2004 (Gaming Mouse)
+User_Reference: u1004 (Carlos Martinez)
+Rating: 4
+Comment: Very responsive, but the RGB lighting could be better.
+Review_Date: 2026-01-15
+
+[REVIEW: r4003]
+Product_Reference: p2005 (4K Monitor 27-inch)
+User_Reference: u1005 (Sophie Dubois)
+Rating: 5
+Comment: Stunning display quality. Perfect for design work.
+Review_Date: 2026-01-18
+
+# --- ORDER HISTORY ---
+[ORDER: o3001]
+User_Reference: u1001 (Alice Johnson)
+Items: 1x Wireless Headphones (p2001), 2x Mechanical Keyboard (p2002)
+Order_Total: 348.99
+Shipping_Status: shipped
+
+[ORDER: o3002]
+User_Reference: u1003 (Emma Wilson)
+Items: 1x Smart Fitness Watch (p2003)
+Order_Total: 179.99
+Discount_Applied: 10%
+Payment_Method: Credit Card
+Shipping_Status: delivered
+Order_Date: 2026-01-11
+
+[ORDER: o3003]
+User_Reference: u1004 (Carlos Martinez)
+Items: 2x Gaming Mouse (p2004)
+Order_Total: 119.98
+Discount_Applied: 0%
+Payment_Method: PayPal
+Shipping_Status: processing
+Order_Date: 2026-01-16
+
+[ORDER: o3004]
+User_Reference: u1005 (Sophie Dubois)
+Items: 1x 4K Monitor 27-inch (p2005), 1x Gaming Mouse (p2004)
+Order_Total: 357.48
+Discount_Applied: 15%
+Payment_Method: Debit Card
+Shipping_Status: shipped
+Order_Date: 2026-01-20
+
+# --- RECOMMENDATION ENGINE OUTPUT ---
+[RECOMMENDATION: rec5001]
+User_Reference: u1003 (Emma Wilson)
+Recommended_Products: p2004 (Gaming Mouse), p2005 (4K Monitor 27-inch)
+Reason: Based on recent wearable purchase and browsing history.
+
+[RECOMMENDATION: rec5002]
+User_Reference: u1004 (Carlos Martinez)
+Recommended_Products: p2003 (Smart Fitness Watch)
+Reason: Frequently viewed fitness category items.
+
+[RECOMMENDATION: rec5003]
+User_Reference: u1005 (Sophie Dubois)
+Recommended_Products: p2003 (Smart Fitness Watch)
+Reason: High-rated wearable products trending among similar users.
+
